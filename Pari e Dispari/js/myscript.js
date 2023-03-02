@@ -7,8 +7,8 @@ while(i < 1){
 
     if(scegliPariDispari == 'pari' || scegliPariDispari == 'dispari' ){
         i++;
-    }
-}
+    };
+};
 
 let numeroGiocatore;
 let x = 0;
@@ -33,7 +33,7 @@ if (even === scegliPariDispari){
     console.log('il vincitore sei TU! Complimenti!');
 }else{
     console.log('il vincitore è il computer!');
-}
+};
 
 
 //funzioni
@@ -42,19 +42,19 @@ if (even === scegliPariDispari){
 function generatoreNumeroRandom(min,max){
     const numeroCasuale = Math.floor(Math.random() * (max - min + 1) + min);
     return numeroCasuale;
-}
+};
 
 
 //funzione per stabilire se la somma di 2 numeri è pari o dispari
 
 function pariDispari(num1,num2){
     const somma = num1 + num2;
-    console.log(`la somma dei numeri è ${somma}`)
+    console.log(`la somma dei numeri è ${somma}`);
 
     if (somma % 2 == 0){
         return 'pari';
     }else{
         return 'dispari';
-    }
+    };
 
-}
+};

@@ -1,24 +1,31 @@
 
 const scegliPariDispari = prompt('Scegli pari o dispari');
+console.log(`hai scelto: ${scegliPariDispari}`);
 
 
 const numeroGiocatore = parseInt(prompt('Inserisci un numero da 1 a 5'));
-console.log(numeroGiocatore);
+console.log(`Il numero che hai scelto è: ${numeroGiocatore}`);
 
 const numeroComputer = generatoreNumeroRandom(1,5);
-console.log(numeroComputer);
+console.log(`Il numero del computer è: ${numeroComputer}`);
 
 const even = pariDispari(numeroGiocatore,numeroComputer);
-console.log(even)
 
 //da dichiare chi ha vinto
+
+if (even === scegliPariDispari){
+    console.log('il vincitore sei TU! Complimenti!');
+}else{
+    console.log('il vincitore è il computer!');
+}
 
 
 //funzioni
 //funzione generazione numero random
 
 function generatoreNumeroRandom(min,max){
-    return numeroCasuale = Math.floor(Math.random() * (max - min + 1) + min);
+    const numeroCasuale = Math.floor(Math.random() * (max - min + 1) + min);
+    return numeroCasuale;
 }
 
 
@@ -26,12 +33,12 @@ function generatoreNumeroRandom(min,max){
 
 function pariDispari(num1,num2){
     const somma = num1 + num2;
-    console.log(somma);
+    console.log(`la somma dei numeri è ${somma}`)
 
     if (somma % 2 == 0){
-        return `la somma dei numeri è pari`;
+        return 'pari';
     }else{
-        return `la somma dei numeri è dispari`;
+        return 'dispari';
     }
 
 }

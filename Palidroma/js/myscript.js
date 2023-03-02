@@ -1,4 +1,4 @@
-const scegliParola = prompt('Inserisci una parola o una frase a tua scelta e ti dirò se è palindroma oppure no.');
+const scegliParola = prompt('Inserisci una parola o una frase a tua scelta e ti dirò se è palindroma oppure no.').trim;
 
 console.log(scegliParola);
 

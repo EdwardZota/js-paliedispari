@@ -1,10 +1,26 @@
 
-const scegliPariDispari = prompt('Scegli pari o dispari');
-console.log(`hai scelto: ${scegliPariDispari}`);
+let scegliPariDispari;
+let  i = 0;
+while(i < 1){
+    scegliPariDispari = prompt('Scegli pari o dispari');
+    console.log(`hai scelto: ${scegliPariDispari}`);
 
+    if(scegliPariDispari == 'pari' || scegliPariDispari == 'dispari' ){
+        i++;
+    }
+}
 
-const numeroGiocatore = parseInt(prompt('Inserisci un numero da 1 a 5'));
-console.log(`Il numero che hai scelto è: ${numeroGiocatore}`);
+let numeroGiocatore;
+let x = 0;
+while(x < 1){
+    numeroGiocatore = parseInt(prompt('Inserisci un numero da 1 a 5'));
+    console.log(`Il numero che hai scelto è: ${numeroGiocatore}`);
+
+    if(numeroGiocatore <= 5){
+        x++;
+    };
+
+};
 
 const numeroComputer = generatoreNumeroRandom(1,5);
 console.log(`Il numero del computer è: ${numeroComputer}`);

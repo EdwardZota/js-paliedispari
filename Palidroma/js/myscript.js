@@ -1,8 +1,11 @@
-const scegliParola = prompt('Inserisci una parola o una frase a tua scelta e ti dirò se è palindroma oppure no.').trim;
+const scegliParola = prompt('Inserisci una parola o una frase a tua scelta e ti dirò se è palindroma oppure no.');
+
+const parolaSenzaSpazi = scegliParola.replace(/\s/g, "");
 
 console.log(scegliParola);
+console.log(parolaSenzaSpazi);
 
-console.log(testPalindromo(scegliParola));
+console.log(testPalindromo(parolaSenzaSpazi));
 
 
 
